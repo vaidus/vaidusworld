@@ -39,7 +39,6 @@ function hybrid_base_register_image_sizes() {
 function hybrid_base_register_menus() {
 	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'hybrid-base' ) );
 	register_nav_menu( 'secondary',  esc_html_x( 'Secondary',  'nav menu location', 'hybrid-base' ) );
-	register_nav_menu( 'subsidiary', esc_html_x( 'Subsidiary', 'nav menu location', 'hybrid-base' ) );
 }
 
 /**
@@ -75,8 +74,24 @@ function hybrid_base_register_sidebars() {
 
 	hybrid_register_sidebar(
 		array(
-			'id'          => 'subsidiary',
-			'name'        => esc_html_x( 'Subsidiary', 'sidebar', 'hybrid-base' ),
+			'id'          => 'footer-1',
+			'name'        => esc_html_x( 'Footer 1', 'sidebar', 'hybrid-base' ),
+			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
+		)
+	);
+	
+	hybrid_register_sidebar(
+		array(
+			'id'          => 'footer-2',
+			'name'        => esc_html_x( 'Footer 2', 'sidebar', 'hybrid-base' ),
+			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
+		)
+	);
+	
+	hybrid_register_sidebar(
+		array(
+			'id'          => 'footer-3',
+			'name'        => esc_html_x( 'Footer 3', 'sidebar', 'hybrid-base' ),
 			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
 		)
 	);
