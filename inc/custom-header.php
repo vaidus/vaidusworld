@@ -17,12 +17,10 @@ function hybrid_base_custom_header_setup() {
 		array(
 			'default-image'          => '',
 			'random-default'         => false,
-			'width'                  => 1280,
-			'height'                 => 400,
-			'flex-width'             => true,
+			'width'                  => 600,
+			'height'                 => 128,
 			'flex-height'            => true,
-			'default-text-color'     => '000000',
-			'header-text'            => true,
+			'header-text'            => false,
 			'uploads'                => true,
 			'wp-head-callback'       => 'hybrid_base_custom_header_wp_head'
 		)
@@ -41,15 +39,10 @@ function hybrid_base_custom_header_setup() {
  */
 function hybrid_base_custom_header_wp_head() {
 
-	if ( ! display_header_text() )
-		return;
+	$header_image = get_header_image();
 
-	$hex = get_header_textcolor();
-
-	if ( ! $hex )
-		return;
-
-	$style = "body.custom-header #site-title a { color: #{$hex}; }";
+	$style = "body.custom-header #branding {  }";
+	$style = sprintf( 'body.custom-header #branding { background: url(%s) center center no-repeat !important; text-indent: -9999px;background-size: %spx %spx !important; }', esc_url( $header_image ), absint( get_custom_header()->width / 2 ), absint( get_custom_header()->height / 2 ) );
 
 	echo "\n" . '<style type="text/css" id="custom-header-css">' . trim( $style ) . '</style>' . "\n";
 }
