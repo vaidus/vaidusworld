@@ -27,8 +27,6 @@
 
 	<?php else : // If not viewing a single post. ?>
 
-		<?php get_the_image(); ?>
-
 		<header class="entry-header">
 
 			<?php the_title( '<h2 ' . hybrid_get_attr( 'entry-title' ) . '><a href="' . get_permalink() . '" rel="bookmark" itemprop="url">', '</a></h2>' ); ?>
@@ -43,6 +41,7 @@
 		</header><!-- .entry-header -->
 
 		<div <?php hybrid_attr( 'entry-summary' ); ?>>
+			<?php get_the_image( array( 'size' => 'medium' ) ); ?>
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
 
