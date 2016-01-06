@@ -123,18 +123,19 @@ h6 {
 /* === Blockquotes, quotes, and cites === */
 
 blockquote {
-	margin: 40px;
-	font-size: 1.1em;
+	margin: 20px;
+	margin-left: 40px;
+	font-size: 1.4em;
 }
 	
 	blockquote::before {
 		content: "\201C";
 		display: block;
-		font-size: 30px;
+		font-size: 100px;
 		height: 0;
-		left: -20px;
+		left: -50px;
 		position: relative;
-		top: -10px;
+		top: -40px;
 	}
 
 	blockquote blockquote {}

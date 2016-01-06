@@ -41,7 +41,7 @@
 		</header><!-- .entry-header -->
 
 		<div <?php hybrid_attr( 'entry-summary' ); ?>>
-			<?php get_the_image( array( 'size' => 'medium' ) ); ?>
+			<?php get_the_image( array( 'size' => 'medium', 'image_class' => 'alignleft' ) ); ?>
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
 
