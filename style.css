@@ -1024,7 +1024,13 @@ img.size-full {}
 
 /* ====== COMMENTS ======= */
 
-#comments {}
+#comments {
+	border: 3px solid #e7e7e7;
+	border-radius: 8px;
+	background: #fff;
+	padding: 40px;
+	margin-bottom: 40px;
+}
 
 	#comments-number {}
 
@@ -1042,21 +1048,38 @@ img.size-full {}
 
 		/* === Individual comments */
 
-		li.comment {}
+		li.comment {
+			border-bottom: 3px solid #efefef;
+			margin: 18px 0;
+			padding: 20px;
+		}
 
 		li.ping {}
 
-		li.bypostauthor {}
+		li.bypostauthor {
+			background: rgba(239, 239, 239,0.5);
+			border-radius: 8px;
+		}
 
 			/* === Avatars === */
 
-			.comment-list .avatar {}
+			.comment-list .avatar {
+				border-radius: 50%;
+				float: left;
+				margin-right: 10px;
+			}
 
 			/* === Meta === */
 
-			.comment-meta {}
+			.comment-meta {
+				margin-bottom: 10px;
+				border-bottom: 1px dotted #ddd;
+				padding-bottom: 4px;
+			}
 
-				.comment-author {}
+				.comment-author {
+					margin-top: 14px;
+				}
 
 					.comment-author cite {}
 
@@ -1064,7 +1087,9 @@ img.size-full {}
 
 			/* === Comment text/content === */
 
-			.comment-content {}
+			.comment-content {
+				clear: both;
+			}
 
 
 			/* === Reply link === */
