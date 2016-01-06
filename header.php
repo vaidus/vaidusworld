@@ -10,7 +10,7 @@
 	<div id="container">
 
 		<div class="skip-link">
-			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'hybrid-base' ); ?></a>
+			<a href="#content" class="screen-reader-text"><?php esc_html_e( 'Skip to content', 'vaidusworld' ); ?></a>
 		</div><!-- .skip-link -->
 
 		<header <?php hybrid_attr( 'header' ); ?>>

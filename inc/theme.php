@@ -37,8 +37,8 @@ function hybrid_base_register_image_sizes() {
  * @return void
  */
 function hybrid_base_register_menus() {
-	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'hybrid-base' ) );
-	register_nav_menu( 'secondary',  esc_html_x( 'Secondary',  'nav menu location', 'hybrid-base' ) );
+	register_nav_menu( 'primary',    esc_html_x( 'Primary',    'nav menu location', 'vaidusworld' ) );
+	register_nav_menu( 'secondary',  esc_html_x( 'Secondary',  'nav menu location', 'vaidusworld' ) );
 }
 
 /**
@@ -50,9 +50,9 @@ function hybrid_base_register_menus() {
  */
 function hybrid_base_register_layouts() {
 
-	hybrid_register_layout( '1c',   array( 'label' => esc_html__( '1 Column',                     'hybrid-base' ), 'image' => '%s/images/layouts/1c.png'   ) );
-	hybrid_register_layout( '2c-l', array( 'label' => esc_html__( '2 Columns: Content / Sidebar', 'hybrid-base' ), 'image' => '%s/images/layouts/2c-l.png' ) );
-	hybrid_register_layout( '2c-r', array( 'label' => esc_html__( '2 Columns: Sidebar / Content', 'hybrid-base' ), 'image' => '%s/images/layouts/2c-r.png' ) );
+	hybrid_register_layout( '1c',   array( 'label' => esc_html__( '1 Column',                     'vaidusworld' ), 'image' => '%s/images/layouts/1c.png'   ) );
+	hybrid_register_layout( '2c-l', array( 'label' => esc_html__( '2 Columns: Content / Sidebar', 'vaidusworld' ), 'image' => '%s/images/layouts/2c-l.png' ) );
+	hybrid_register_layout( '2c-r', array( 'label' => esc_html__( '2 Columns: Sidebar / Content', 'vaidusworld' ), 'image' => '%s/images/layouts/2c-r.png' ) );
 }
 
 /**
@@ -67,32 +67,32 @@ function hybrid_base_register_sidebars() {
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'primary',
-			'name'        => esc_html_x( 'Primary', 'sidebar', 'hybrid-base' ),
-			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
+			'name'        => esc_html_x( 'Primary', 'sidebar', 'vaidusworld' ),
+			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
 		)
 	);
 
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'footer-1',
-			'name'        => esc_html_x( 'Footer 1', 'sidebar', 'hybrid-base' ),
-			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
+			'name'        => esc_html_x( 'Footer 1', 'sidebar', 'vaidusworld' ),
+			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
 		)
 	);
 	
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'footer-2',
-			'name'        => esc_html_x( 'Footer 2', 'sidebar', 'hybrid-base' ),
-			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
+			'name'        => esc_html_x( 'Footer 2', 'sidebar', 'vaidusworld' ),
+			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
 		)
 	);
 	
 	hybrid_register_sidebar(
 		array(
 			'id'          => 'footer-3',
-			'name'        => esc_html_x( 'Footer 3', 'sidebar', 'hybrid-base' ),
-			'description' => esc_html__( 'Add sidebar description.', 'hybrid-base' )
+			'name'        => esc_html_x( 'Footer 3', 'sidebar', 'vaidusworld' ),
+			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
 		)
 	);
 }

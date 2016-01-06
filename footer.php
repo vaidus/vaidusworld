@@ -9,7 +9,7 @@
 			<p class="credit">
 				<?php printf(
 					// Translators: 1 is current year, 2 is site name/link
-					esc_html__( 'Copyright &#169; %1$s %2$s', 'hybrid-base' ), 
+					esc_html__( 'Copyright &#169; %1$s %2$s', 'vaidusworld' ), 
 					date_i18n( 'Y' ), hybrid_get_site_link()
 				); ?>
 			</p><!-- .credit -->
