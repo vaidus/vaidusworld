@@ -114,4 +114,7 @@ function hybrid_base_enqueue_styles() {
 
 	// Load active theme stylesheet.
 	wp_enqueue_style( 'hybrid-style' );
+	
+	wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Dancing+Script|Lato:400,700', array(), 1.0 );
 }
