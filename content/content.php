@@ -44,6 +44,11 @@
 			<?php get_the_image( array( 'size' => 'medium', 'image_class' => 'alignleft' ) ); ?>
 			<?php the_excerpt(); ?>
 		</div><!-- .entry-summary -->
+		
+		<footer class="entry-footer">
+			<?php hybrid_post_terms( array( 'taxonomy' => 'category', 'text' => esc_html__( 'Posted in %s', 'vaidusworld' ) ) ); ?>
+			<?php hybrid_post_terms( array( 'taxonomy' => 'post_tag', 'text' => esc_html__( 'Tagged %s', 'vaidusworld' ), 'before' => '<br />' ) ); ?>
+		</footer><!-- .entry-footer -->
 
 	<?php endif; // End single post check. ?>
 
