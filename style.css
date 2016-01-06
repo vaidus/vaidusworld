@@ -737,7 +737,7 @@ img.size-full {}
 				content: "\f318";
 			}
 
-			.entry-terms.tag::before {
+			.entry-terms.post_tag::before {
 				content: "\f323";
 			}
 
