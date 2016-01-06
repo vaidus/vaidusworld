@@ -1,7 +1,7 @@
 <?php
 
 # Call late so child themes can override.
-add_action( 'after_setup_theme', 'hybrid_base_custom_header_setup', 15 );
+add_action( 'after_setup_theme', 'vaidusworld_custom_header_setup', 15 );
 
 /**
  * Adds support for the WordPress 'custom-header' theme feature and registers custom headers.
@@ -10,7 +10,7 @@ add_action( 'after_setup_theme', 'hybrid_base_custom_header_setup', 15 );
  * @access public
  * @return void
  */
-function hybrid_base_custom_header_setup() {
+function vaidusworld_custom_header_setup() {
 
 	add_theme_support(
 		'custom-header',
@@ -22,7 +22,7 @@ function hybrid_base_custom_header_setup() {
 			'flex-height'            => true,
 			'header-text'            => false,
 			'uploads'                => true,
-			'wp-head-callback'       => 'hybrid_base_custom_header_wp_head'
+			'wp-head-callback'       => 'vaidusworld_custom_header_wp_head'
 		)
 	);
 
@@ -37,7 +37,7 @@ function hybrid_base_custom_header_setup() {
  * @access public
  * @return void
  */
-function hybrid_base_custom_header_wp_head() {
+function vaidusworld_custom_header_wp_head() {
 
 	$header_image = get_header_image();
 
