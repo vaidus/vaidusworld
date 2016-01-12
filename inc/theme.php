@@ -71,6 +71,14 @@ function vaidusworld_register_sidebars() {
 			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
 		)
 	);
+	
+	hybrid_register_sidebar(
+		array(
+			'id'          => 'header-right',
+			'name'        => esc_html_x( 'Header Right', 'sidebar', 'vaidusworld' ),
+			'description' => esc_html__( 'Add sidebar description.', 'vaidusworld' )
+		)
+	);
 
 	hybrid_register_sidebar(
 		array(
@@ -131,5 +139,5 @@ function vaidusworld_enqueue_styles() {
 	wp_enqueue_style( 'hybrid-style' );
 
 	wp_enqueue_style( 'dashicons' );
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Dancing+Script|Lato:400,700', array(), 1.0 );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Kurale|Lato:400,700', array(), 1.0 );
 }
